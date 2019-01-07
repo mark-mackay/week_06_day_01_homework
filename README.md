@@ -1,3 +1,7 @@
+## NOTE: 
+####I will not be in tomorrow at all now due to the condition getting much worst unfortunately so I'll update after the doctors appointment. Is there any way I can skype in or is that too disruptive? 
+####Just a feed into the classroom would suffice.
+
 # Episode  1
 ###
 ###  Anticipate that this will log "The murderer is Miss Scarlet." as all the constants seem to be declared in the same scope.
@@ -44,7 +48,7 @@
 # Episode  9
 
 ### Think this may error as we are trying to declare the same variable again within the if statement -- Wrong!
-Failing that it will remain Professor plum as if the declaration works it is local to the if block. -- Right.
+### Failing that it will remain Professor plum as if the declaration works it is local to the if block. -- Right.
 
 # Episode  10 (# Episode  8 adapted)
 
