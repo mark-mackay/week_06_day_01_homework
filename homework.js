@@ -43,7 +43,48 @@ Episode 8
 
 Episode 9
 
-// Think this may error as we are trying to declare the same variable again within the if statement -- Wrong!
-// Failing that it will remain Professor plum as if the declaration works it is local to the if block. -- Right.
+Think this may error as we are trying to declare the same variable again within the if statement -- Wrong!
+Failing that it will remain Professor plum as if the declaration works it is local to the if block. -- Right.
 
-Episode 10
+Episode 10 (Episode 8 adapted)
+
+const scenario = {
+  murderer: 'Mrs. Peacock',
+  room: 'Conservatory',
+  weapon: 'Lead Pipe'
+};
+
+const changeScenario = function() {
+  scenario.murderer = 'Professor Plum';
+  scenario.room = 'Kitchen';
+
+  const plotTwist = function(room) {
+    if (scenario.room === room) {
+      scenario.murderer = 'Colonel Mustard';
+    } else {
+      scenario.murderer = 'Miss Scarlet';
+    }
+
+
+    const unexpectedOutcome = function(murderer) {
+      if (scenario.murderer === murderer) {
+        scenario.weapon = 'Rope';
+        scenario.room = 'Dining Room'
+      }
+    }
+
+    unexpectedOutcome('Colonel Mustard');
+  }
+
+  plotTwist('Dining Room');
+}
+
+const declareMurderer = function() {
+  return `The murderer is ${scenario.murderer}.`
+}
+
+changeScenario();
+const verdict = declareMurderer();
+console.log(verdict);
+
+// Expected to be Miss Scarlet...
